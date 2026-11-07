@@ -1,0 +1,48 @@
+{
+  "name": "dsh-plugin-balance-chip",
+  "version": "1.0.0",
+  "description": "Live DeepSeek account balance chip in the session header: remaining credit and unused bonus, refreshed every 20 seconds.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "balance",
+    "credit",
+    "usage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boy1141/dsh-plugin-balance-chip.git"
+  },
+  "homepage": "https://github.com/boy1141/dsh-plugin-balance-chip#readme",
+  "bugs": {
+    "url": "https://github.com/boy1141/dsh-plugin-balance-chip/issues"
+  },
+  "license": "MIT"
+}
