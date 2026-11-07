@@ -19,11 +19,16 @@ unused bonus credit, and when the number was last read.
 
 ## Install
 
+From GitHub:
+
 ```sh
-dsh plugin add dsh-plugin-balance-chip
+dsh plugin add github:boy1141/dsh-plugin-balance-chip
 ```
 
-Or in the Web GUI: Settings → Plugins → search the market for `dsh-plugin-balance-chip`.
+Or grab `dsh-plugin-balance-chip.tgz` from the
+[latest release](https://github.com/boy1141/dsh-plugin-balance-chip/releases/latest)
+and install that tarball. Once the entry is listed in the plugin market, Settings →
+Plugins will find it there as well.
 
 ## Files
 
