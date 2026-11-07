@@ -1,0 +1,10 @@
+# dsh-plugin-balance-chip bundle patch.
+#
+# The Host row is intentionally thin: it exists so the Loader has an enabled
+# entry, and `dsh-client-modules` turns that entry's `dsh.client` manifest into
+# the browser bundle under `/plugins`. All behaviour lives in `lib/client.js`,
+# which reads the account Remote (`ctx.remote.account.getBalance`) — the same
+# Host-side platform query the Settings → Account panel uses.
+- insert:
+    - id: balance-chip
+      name: 'dsh-plugin-balance-chip'
